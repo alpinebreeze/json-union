@@ -17,7 +17,8 @@
     "lint": "tslint src/**/*.ts",
     "pretest": "npm run build",
     "test": "npm run lint && jest --coverage",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "postversion": "git push && git push --tags"
   },
   "author": "Richard Adams",
   "license": "ISC",
