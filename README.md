@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/alpinebreeze/json-union.svg?branch=master)](https://travis-ci.org/alpinebreeze/json-union)
 # json-union
 An es6 library used to merge JSON files that match a set of glob patterns.
 
