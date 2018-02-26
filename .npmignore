@@ -1,0 +1,8 @@
+coverage
+dist/**/tests
+src
+.gitignore
+.npmignore
+npm-debug.log
+tsconfig.json
+tslint.json
