@@ -1,8 +1,10 @@
 coverage
 dist/**/tests
+node_modules
 src
 .gitignore
 .npmignore
-npm-debug.log
+.travis.yml
+package-lock.json
 tsconfig.json
 tslint.json
