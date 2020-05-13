@@ -1,10 +1,14 @@
-import * as parseArgs from "minimist";
+import parseArgs from "minimist";
 import jsonUnion, { Options } from "../";
 
 async function cli(args: string[]): Promise<void> {
-
     const argv = parseArgs(args, {
-        alias: { o: "outfile", i: "ignoreParseErrors", d: "deepMerge", e: "encoding" },
+        alias: {
+            o: "outfile",
+            i: "ignoreParseErrors",
+            d: "deepMerge",
+            e: "encoding",
+        },
         boolean: ["deepMerge", "ignoreParseErrors"],
         string: ["encoding", "outfile"],
     });
