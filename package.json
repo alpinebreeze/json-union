@@ -1,6 +1,6 @@
 {
   "name": "json-union",
-  "version": "1.3.3",
+  "version": "2.0.0",
   "description": "An es6 library used to merge JSON files that match a set of glob patterns",
   "repository": {
     "type": "git",
