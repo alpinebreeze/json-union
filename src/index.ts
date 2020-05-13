@@ -111,11 +111,7 @@ async function jsonUnion(
                 throw error;
             }
 
-            if (settings.deepMerge) {
-                extend(true, mergedJson, json);
-            } else {
-                extend(mergedJson, json);
-            }
+            extend(settings.deepMerge || false, mergedJson, json);
         }
     }
 

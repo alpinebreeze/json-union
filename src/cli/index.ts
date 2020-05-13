@@ -13,12 +13,12 @@ async function cli(args: string[]): Promise<void> {
         string: ["encoding", "outfile"],
     });
 
-    const options: Options = {
-        deepMerge: argv.deepMerge,
-        encoding: argv.encoding,
-        ignoreParseErrors: argv.ignoreParseErrors,
-        outfile: argv.outfile,
-    };
+    const options = (({
+        outfile,
+        ignoreParseErrors,
+        deepMerge,
+        encoding,
+    }): Options => ({ outfile, ignoreParseErrors, deepMerge, encoding }))(argv);
 
     let json: any;
 
